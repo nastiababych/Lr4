@@ -1,6 +1,7 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title></title>
+<title>LR4</title>
 <style>
 html { 
     color: #f1f1f1;
@@ -54,7 +55,7 @@ html {
 </head>
 
 <body>
-  <div calss="wrapper">
+  <div>
     <div class="system-earth">
     <div class="body moon"></div>
     <div class="body earth"></div>
@@ -62,4 +63,4 @@ html {
   </div>
 </body>
 
-<html>
+</html>
