@@ -1,0 +1,65 @@
+<html>
+<head>
+<title></title>
+<style>
+html { 
+    color: #f1f1f1;
+    overflow: hidden;
+    font: 1em 'Segoe UI';
+    background: #121212; 
+}
+
+.wrapper {
+  background-color: white;
+}
+
+.body {
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: linear-gradient(-45deg, black, transparent);
+}
+
+.earth {
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    width: 10em; height: 10em;
+    box-shadow: 0 0 1em blue, inset 0 0 7em blue;
+}
+
+.system-earth {
+    margin: 0 auto;
+    margin-top: 5em;
+    position: relative;
+    width: 10em; height: 10em;
+    background-color: transparent;
+}
+
+.moon {
+    z-index: 3;
+    position: absolute;
+    top: 4.5em; left: -10em;
+    width: 5em; height: 5em;
+    animation: earth-orbit 10s ease-in-out infinite;
+    background-color: lightgrey;
+}
+
+@keyframes earth-orbit {
+      0% { transform: translate(0,-7.5em);}
+     50% { transform: translate(25em,5em); z-index: 3; }
+    100% { transform: translate(0,-7.5em); z-index: 1;}
+}
+</style>
+</head>
+
+<body>
+  <div calss="wrapper">
+    <div class="system-earth">
+    <div class="body moon"></div>
+    <div class="body earth"></div>
+    </div>
+  </div>
+</body>
+
+<html>
